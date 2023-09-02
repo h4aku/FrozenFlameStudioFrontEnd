@@ -1,0 +1,75 @@
+#aboutUs{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.aboutUs-header {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUs-image,
+.aboutUs-content {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.aboutUs-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    border-radius: 15px;
+}
+
+.aboutUs-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.aboutUs-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+@media (min-width: 932px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aboutUs-image {
+        flex: 1;
+        margin-right: 40px;
+        min-width: 50%;
+    }
+
+    .aboutUs-content {
+        flex: 2;
+        text-align: left;
+    }
+
+    .aboutUs-content p {
+        font-size: 18px;
+    }
+}

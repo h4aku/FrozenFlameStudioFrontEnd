@@ -1,0 +1,114 @@
+#services{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    place-items: center;
+}
+
+.services-header {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slider-container{
+    width: 1600px;
+    margin: auto;
+    display: flex;
+}
+
+#controls{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.previous, .next{
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    margin: 0 10px;
+}
+
+.services-slider{
+    width: 85%;
+    margin: auto;
+}
+
+.cont {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #1dced8 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+
+.services-h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em;
+}
+
+.service-p {
+    color: #4d4f6b;
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.icon {
+    background-color: #1dced8;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+
+.card:hover {
+    background-position: 0 100%;
+    background: linear-gradient(#ffb562, #1dced8);
+}
+
+.card:hover .icon {
+    background-color: #ffffff;
+    color: #ffb562;
+    transition: 0.5s;
+}
+
+.card:hover h2 {
+    color: #ffffff;
+}
+
+.card:hover p {
+    color: #f0f0f0;
+}
+
+@media(max-width: 5000px){
+    .slider-container{
+        width: 100%;
+    }
+
+    .card{
+        height: 400px;
+    }
+}
